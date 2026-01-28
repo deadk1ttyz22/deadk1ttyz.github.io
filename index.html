@@ -127,7 +127,7 @@ footer{
   <source src="audio/bgm.mp3" type="audio/mpeg">
 </audio>
 
-<button id="soundBtn">🔊 Ativar som</button>
+<button id="soundBtn" onclick="playSound()">🔊 Ativar som</button>
 
 <div class="banner"></div>
 
@@ -165,21 +165,23 @@ document.querySelectorAll('[data-target]').forEach(counter=>{
     if(current<target){
       counter.innerText=Math.ceil(current+inc).toLocaleString();
       setTimeout(update,20);
-    } else counter.innerText=target.toLocaleString();
+    } else {
+      counter.innerText=target.toLocaleString();
+    }
   };
   update();
 });
 
-// som
+// som (mobile safe)
 const audio=document.getElementById('bgm');
 const btn=document.getElementById('soundBtn');
 
-btn.onclick=()=>{
+function playSound(){
   audio.volume = 0.4;
-  audio.play().catch(()=>{});
+  audio.play();
   btn.classList.add('active');
   btn.innerText='🔊 Som ligado';
-};
+}
 </script>
 
 </body>
