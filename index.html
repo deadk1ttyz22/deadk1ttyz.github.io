@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>deadk1ttyz • Criador & Editor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- SEO PESADO --><meta name="description" content="deadk1ttyz é um criador de conteúdo, editor e influencer conhecido no TikTok. +13K seguidores, +11M visualizações, vídeos viralizados e forte presença digital." />
+<meta name="keywords" content="deadk1ttyz, tiktok famoso, editor, influencer, criador de conteúdo, viral" />
+<meta name="author" content="deadk1ttyz" />
+<meta property="og:title" content="deadk1ttyz • Site Oficial" />
+<meta property="og:description" content="Criador de conteúdo e editor conhecido no TikTok. +11M visualizações." />
+<meta property="og:image" content="https://zyo.se/assets/images/avatars/1768459684_1000173496.jpg" /><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" /><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  background:#000;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* BACKGROUND CINEMÁTICO */
+.bg{
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(255,255,255,.06),transparent 40%),
+    radial-gradient(circle at 80% 30%,rgba(255,255,255,.04),transparent 45%),
+    radial-gradient(circle at 50% 80%,rgba(255,255,255,.03),transparent 50%);
+  animation:float 20s infinite linear;
+  z-index:-2;
+}
+@keyframes float{0%{filter:brightness(1)}50%{filter:brightness(1.2)}100%{filter:brightness(1)}}
+
+/* GRAIN */
+.noise{
+  position:fixed;
+  inset:0;
+  background:url('https://grainy-gradients.vercel.app/noise.svg');
+  opacity:.05;
+  z-index:-1;
+}
+
+/* BANNER */
+.banner{
+  height:420px;
+  background:url('https://zyo.se/assets/images/backgrounds/1768459907_1000186917.gif') center/cover no-repeat;
+  position:relative;
+}
+.banner::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to bottom,transparent,#000 92%);
+}
+
+/* PERFIL */
+.profile{
+  max-width:1200px;
+  margin:-150px auto 0;
+  padding:0 24px;
+  text-align:center;
+}
+.avatar{
+  width:210px;
+  height:210px;
+  margin:0 auto;
+  border-radius:50%;
+  background:url('https://zyo.se/assets/images/avatars/1768459684_1000173496.jpg') center/cover no-repeat;
+  border:6px solid #000;
+  box-shadow:0 0 120px rgba(255,255,255,.55);
+  animation:pulse 4s infinite ease-in-out;
+}
+@keyframes pulse{0%,100%{box-shadow:0 0 60px rgba(255,255,255,.35)}50%{box-shadow:0 0 150px rgba(255,255,255,.75)}}
+
+h1{
+  margin-top:30px;
+  font-size:3.6rem;
+  font-weight:800;
+  letter-spacing:1.2px;
+}
+.subtitle{
+  margin-top:12px;
+  font-family:'Playfair Display',serif;
+  opacity:.85;
+}
+
+/* STATS COM CONTADOR */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:30px;
+  margin:90px 0;
+}
+.stat{
+  background:rgba(255,255,255,.09);
+  border-radius:30px;
+  padding:38px 24px;
+  backdrop-filter:blur(22px);
+  transition:.45s;
+}
+.stat:hover{
+  transform:translateY(-14px) scale(1.06);
+  background:rgba(255,255,255,.16);
+}
+.stat h2{
+  font-size:2.6rem;
+  font-weight:800;
+}
+.stat p{opacity:.75;margin-top:6px}
+
+/* REDES */
+.links{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  margin-bottom:100px;
+}
+.links a{
+  padding:18px 32px;
+  border-radius:50px;
+  border:1px solid rgba(255,255,255,.4);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  backdrop-filter:blur(18px);
+  transition:.4s;
+}
+.links a:hover{
+  background:#fff;
+  color:#000;
+  transform:scale(1.12);
+}
+
+/* BOTÃO MUTE */
+#mute{
+  position:fixed;
+  bottom:22px;
+  right:22px;
+  padding:14px 20px;
+  border-radius:30px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.35);
+  color:#fff;
+  cursor:pointer;
+  backdrop-filter:blur(12px);
+}
+#mute:hover{background:#fff;color:#000}
+
+footer{
+  text-align:center;
+  opacity:.45;
+  font-size:.85rem;
+  padding:50px 0 70px;
+}
+</style></head><body>
+<div class="bg"></div>
+<div class="noise"></div><audio id="bgm" autoplay loop>
+  <source src="AhaTok_nuts_8f2ee916-3c53-49c7-aad8-e5033c727e96.mp3" type="audio/mpeg">
+</audio><button id="mute">mute</button>
+
+<div class="banner"></div><section class="profile">
+  <div class="avatar"></div>
+  <h1>deadk1ttyz</h1>
+  <p class="subtitle">Criador de conteúdo • Editor • Influencer digital</p>  <div class="stats">
+    <div class="stat"><h2 data-target="13000">0</h2><p>Seguidores</p></div>
+    <div class="stat"><h2 data-target="11000000">0</h2><p>Visualizações</p></div>
+    <div class="stat"><h2 data-target="800000">0</h2><p>Curtidas</p></div>
+    <div class="stat"><h2 data-target="80000">0</h2><p>Compartilhamentos</p></div>
+    <div class="stat"><h2 data-target="20000">0</h2><p>Comentários</p></div>
+    <div class="stat"><h2 data-target="72000">0</h2><p>Views no perfil</p></div>
+  </div>  <div class="links">
+    <a href="https://www.tiktok.com/@deadk1ttyz" target="_blank">TikTok</a>
+    <a href="https://www.instagram.com/deadk1ttyz" target="_blank">Instagram</a>
+    <a href="https://www.roblox.com/pt/users/1897463474/profile" target="_blank">Roblox</a>
+    <a href="https://open.spotify.com/user/31tefprafz2osvrbl4jzzn4a43sq" target="_blank">Spotify</a>
+  </div>
+</section><footer>
+© 2026 deadk1ttyz • Site oficial
+</footer><script>
+// contador animado
+const counters=document.querySelectorAll('[data-target]');
+counters.forEach(counter=>{
+  const update=()=>{
+    const target=+counter.dataset.target;
+    const current=+counter.innerText.replace(/\D/g,'');
+    const inc=target/120;
+    if(current<target){counter.innerText=Math.ceil(current+inc).toLocaleString();setTimeout(update,20)}
+    else{counter.innerText=target.toLocaleString()}
+  };update();
+});
+
+// mute
+const audio=document.getElementById('bgm');
+document.getElementById('mute').onclick=()=>{audio.muted=!audio.muted};
+</script></body>
+  </html>
